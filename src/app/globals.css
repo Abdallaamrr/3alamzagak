@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;800;900&family=Cairo:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cairo: 'Cairo', sans-serif;
+  --font-alexandria: 'Alexandria', sans-serif;
+  --font-cinzel: 'Cinzel', serif;
+}
+
+body {
+  background-color: #07090e;
+  color: #f6f1e9;
+  font-family: var(--font-cairo), 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Luxury Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0d14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f3e5ab;
+}
+
+/* Gold Text Shine */
+.gold-text-shine {
+  background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #b89220 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(15, 20, 32, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
