@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cf-build": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion"
+    "cf-build": "opennextjs-cloudflare build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",
