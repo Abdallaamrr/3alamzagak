@@ -17,7 +17,8 @@ export default function PrivacyPage() {
 
       <div className="p-8 rounded-3xl bg-navy-900 border border-gold-500/20 space-y-4 text-xs text-cream-200 leading-relaxed">
         <p>
-          يلتزم متجر عالم زاجك (3alamzagak) بحماية بياناتك الشخصية ومعلومات الشحن والدفع الخاصة بك بأعلى معايير الأمان والتشفير.
+          يلتزم متجر عالم على مزاجك (3alamzagak) بحماية بياناتك الشخصية ومعلومات
+          الشحن والدفع الخاصة بك بأعلى معايير الأمان والتشفير.
         </p>
       </div>
     </div>

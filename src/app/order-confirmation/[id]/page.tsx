@@ -53,13 +53,14 @@ export default function OrderConfirmationPage() {
           {t.orderConfirmedTitle}
         </h1>
         <p className="text-xs text-gray-300">
-          {lang === 'ar'
-            ? 'شكراً لتسوقك من عالم زاجك! سيتم تجهيز طلبك وشحنه خلال أقرب وقت ممكن.'
-            : 'Thank you for shopping at 3alamzagak! Your order is queued for packing & delivery.'}
+          {lang === "ar"
+            ? "شكراً لتسوقك من عالم على مزاجك! سيتم تجهيز طلبك وشحنه خلال أقرب وقت ممكن."
+            : "Thank you for shopping at 3alamzagak! Your order is queued for packing & delivery."}
         </p>
 
         <div className="inline-block px-4 py-1.5 rounded-full bg-gold-500/20 border border-gold-500/30 text-gold-400 font-bold text-sm">
-          {t.orderNumberLabel} <span className="font-mono">{order.orderNumber}</span>
+          {t.orderNumberLabel}{" "}
+          <span className="font-mono">{order.orderNumber}</span>
         </div>
       </div>
 
@@ -84,22 +85,30 @@ export default function OrderConfirmationPage() {
           </div>
 
           <div className="p-3 rounded-xl bg-navy-950 border border-gold-500/10 space-y-1">
-            <span className="font-bold text-gold-400 block">{t.stepAddress}</span>
+            <span className="font-bold text-gold-400 block">
+              {t.stepAddress}
+            </span>
             <p className="font-semibold text-cream-100">
               {order.shippingAddress.governorate} - {order.shippingAddress.city}
             </p>
             <p className="text-gray-400">
-              {order.shippingAddress.streetAddress} ({order.shippingAddress.building})
+              {order.shippingAddress.streetAddress} (
+              {order.shippingAddress.building})
             </p>
           </div>
         </div>
 
         {/* Items List */}
         <div className="space-y-3 pt-2">
-          <h3 className="font-bold text-cream-100">{lang === 'ar' ? 'المنتجات المطلوبة' : 'Items'}</h3>
+          <h3 className="font-bold text-cream-100">
+            {lang === "ar" ? "المنتجات المطلوبة" : "Items"}
+          </h3>
           <div className="divide-y divide-gold-500/10">
             {order.items.map((item) => (
-              <div key={item.productId} className="py-2.5 flex items-center justify-between">
+              <div
+                key={item.productId}
+                className="py-2.5 flex items-center justify-between"
+              >
                 <div className="flex items-center gap-3">
                   <img
                     src={item.image}
@@ -108,7 +117,7 @@ export default function OrderConfirmationPage() {
                   />
                   <div>
                     <p className="font-bold text-cream-100">
-                      {lang === 'ar' ? item.productNameAr : item.productNameEn}
+                      {lang === "ar" ? item.productNameAr : item.productNameEn}
                     </p>
                     <p className="text-gray-400">الكمية: {item.quantity}</p>
                   </div>
@@ -125,21 +134,31 @@ export default function OrderConfirmationPage() {
         <div className="pt-4 border-t border-gold-500/20 space-y-1 text-end">
           <div className="flex justify-between">
             <span className="text-gray-400">{t.subtotal}</span>
-            <span className="font-bold text-cream-100">{order.subtotal} {t.egp}</span>
+            <span className="font-bold text-cream-100">
+              {order.subtotal} {t.egp}
+            </span>
           </div>
           {order.discount > 0 && (
             <div className="flex justify-between text-suit-red">
               <span>{t.discount}</span>
-              <span className="font-bold">-{order.discount.toFixed(0)} {t.egp}</span>
+              <span className="font-bold">
+                -{order.discount.toFixed(0)} {t.egp}
+              </span>
             </div>
           )}
           <div className="flex justify-between">
             <span className="text-gray-400">{t.shippingFee}</span>
-            <span className="font-bold text-cream-100">{order.shippingFee === 0 ? t.freeShipping : `${order.shippingFee} ${t.egp}`}</span>
+            <span className="font-bold text-cream-100">
+              {order.shippingFee === 0
+                ? t.freeShipping
+                : `${order.shippingFee} ${t.egp}`}
+            </span>
           </div>
           <div className="flex justify-between text-base font-black text-gold-400 pt-2 border-t border-gold-500/10">
             <span>{t.grandTotal}</span>
-            <span>{order.total.toFixed(0)} {t.egp}</span>
+            <span>
+              {order.total.toFixed(0)} {t.egp}
+            </span>
           </div>
         </div>
       </div>

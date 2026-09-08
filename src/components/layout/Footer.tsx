@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
     if (email.trim()) {
       addToast(
         lang === 'ar'
-          ? 'تم اشتراكك بنجاح في عائلة عالم زاجك! تفقد بريدك للحصول على الخصم 🥳'
+          ? 'تم اشتراكك بنجاح في عائلة عالم على مزاجك! تفقد بريدك للحصول على الخصم 🥳'
           : 'Subscribed to 3alamzagak Club! Check your inbox for your discount 🥳',
         'success'
       );
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
             <Logo size="lg" />
             <p className="text-xs text-gray-400 leading-relaxed max-w-sm">
               {lang === 'ar'
-                ? 'عالم زاجك هو العلامة التجارية المصرية الأولى المتخصصة في ألعاب الكروت والترابيزة والجمعات. نبتكر ونوفر أمتع الألعاب المصممة بجودة ملكية تليق بأوقاتك.'
+                ? 'عالم على مزاجك هو العلامة التجارية المصرية الأولى المتخصصة في ألعاب الكروت والترابيزة والجمعات. نبتكر ونوفر أمتع الألعاب المصممة بجودة ملكية تليق بأوقاتك.'
                 : '3alamzagak is Egypt’s premier brand dedicated to card games, tabletop, and gathering games. We craft high-end game experiences for unforgettable moments.'}
             </p>
             <div className="flex items-center gap-4 text-xs text-gold-400 pt-2">

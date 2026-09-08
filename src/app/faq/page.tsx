@@ -22,7 +22,7 @@ export default function FAQPage() {
       aEn: 'Yes, we support Cash on Delivery across all governorates in Egypt.',
     },
     {
-      qAr: 'هل منتجات وألعاب عالم زاجك أصلية؟',
+      qAr: 'هل منتجات وألعاب عالم على مزاجك أصلية؟',
       qEn: 'Are 3alamzagak games authentic?',
       aAr: 'جميع المنتجات أصلية 100% ومصنوعة بخامات ملكية فاخرة تسعى لضمان أطول عمر افتراضي للكروت والطاولات.',
       aEn: '100% authentic products crafted with premium materials for maximum durability.',
@@ -43,7 +43,7 @@ export default function FAQPage() {
           <span>{t.faq}</span>
         </h1>
         <p className="text-xs text-gray-400">
-          {lang === 'ar' ? 'إجابات على الأسئلة الأكثر شيوعاً بين زبائن عالم زاجك' : 'Frequently asked questions'}
+          {lang === 'ar' ? 'إجابات على الأسئلة الأكثر شيوعاً بين زبائن عالم على مزاجك' : 'Frequently asked questions'}
         </p>
       </div>
 

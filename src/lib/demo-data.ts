@@ -75,9 +75,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: '3Z-SPD-01',
     nameAr: 'لعبة سبيدي (Speeeeeedy!) الاصدار الذهبي',
     nameEn: 'Speeeeeedy! Card Game Gold Edition',
-    descriptionAr: 'لعبة الكروت الأكثر حماساً وسرعة من عالم زاجك! تتطلب التركيز العالي، البديهة السريعة، وردود الأفعال الخاطفة. تجمع بين الخدع البصرية وتكتيك الكروت لتسحق منافسيك قبل أن ينتهي الوقت.',
+    descriptionAr: 'لعبة الكروت الأكثر حماساً وسرعة من عالم على مزاجك! تتطلب التركيز العالي، البديهة السريعة، وردود الأفعال الخاطفة. تجمع بين الخدع البصرية وتكتيك الكروت لتسحق منافسيك قبل أن ينتهي الوقت.',
     descriptionEn: 'The flagship rapid-fire card game from 3alamzagak! Requires lightning-fast reflexes, intense focus, and clever card combos. Outplay your rivals before the timer runs out!',
-    shortDescriptionAr: 'لعبة السرعة والتركيز الأولى من عالم زاجك (2-4 لاعبين)',
+    shortDescriptionAr: 'لعبة السرعة والتركيز الأولى من عالم على مزاجك (2-4 لاعبين)',
     shortDescriptionEn: 'The ultimate speed & reflexes card game by 3alamzagak (2-4 Players)',
     price: 349,
     salePrice: 289,
@@ -117,7 +117,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: '3Z-HDB-02',
     nameAr: 'لعبة حُضبت - شرطة وحرامية',
     nameEn: 'Hodabt - Police & Thief Card Game',
-    descriptionAr: 'لعبة الخداع والتحقيق المصرية الشهيرة من عالم زاجك! تقمص دور الشرطي (حُضبت)، الحرامي، أو النقاش ونط السور في مغامرة مثيرة تسعى فيها لكشف الهويات المخفية وتوزيع الشبهات.',
+    descriptionAr: 'لعبة الخداع والتحقيق المصرية الشهيرة من عالم على مزاجك! تقمص دور الشرطي (حُضبت)، الحرامي، أو النقاش ونط السور في مغامرة مثيرة تسعى فيها لكشف الهويات المخفية وتوزيع الشبهات.',
     descriptionEn: 'The iconic Egyptian bluffing & investigation game by 3alamzagak! Play as the Cop (Hodabt), Thief, Painter, or Parkour Master to uncover hidden identities and catch the culprit.',
     shortDescriptionAr: 'لعبة الذكاء والتمثيل والخداع الجماعية (3-8 لاعبين)',
     shortDescriptionEn: 'The social deduction & bluffing game for groups (3-8 Players)',
@@ -201,7 +201,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: '3Z-OKF-04',
     nameAr: 'لعبة أوقف عندك! (Okef 3andak)',
     nameEn: 'Okef 3andak! Action Card Game',
-    descriptionAr: 'أوقف كروت منافسيك في لحظة الحسم! لعبة الأكشن والتحديات المباشرة من عالم زاجك. استخدم كروت الفيتو والمنع لتدمير خطط المنافس وفز بالجولة.',
+    descriptionAr: 'أوقف كروت منافسيك في لحظة الحسم! لعبة الأكشن والتحديات المباشرة من عالم على مزاجك. استخدم كروت الفيتو والمنع لتدمير خطط المنافس وفز بالجولة.',
     descriptionEn: 'Stop your rivals dead in their tracks! Fast action and direct challenge card game by 3alamzagak with vetoes and instant counters.',
     shortDescriptionAr: 'لعبة التحديات والحظر المباشر بين الأصدقاء',
     shortDescriptionEn: 'The action challenge & instant counter card game',
@@ -425,7 +425,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: '3Z-DCE-10',
     nameAr: 'طقم نرد معدني مذهب فاخر RPG (7 قطع مع بيت مخملي)',
     nameEn: 'Luxury Gold Metal RPG Dice Set (7 Polyhedral Dice + Velvet Pouch)',
-    descriptionAr: 'طقم نرد معدني بحواف حادة ولمعة ذهبية ملكية مخصصة لألعاب الدراجونز، الشطرنج، والدومينو. يأتي في حقيبة مخملية سوداء بشعار عالم زاجك.',
+    descriptionAr: 'طقم نرد معدني بحواف حادة ولمعة ذهبية ملكية مخصصة لألعاب الدراجونز، الشطرنج، والدومينو. يأتي في حقيبة مخملية سوداء بشعار عالم على مزاجك.',
     descriptionEn: 'Solid metal gold-finished polyhedral dice set with razor-sharp edges and satisfying heavy weight. Includes custom 3alamzagak velvet pouch.',
     shortDescriptionAr: 'نرد معدني ثقيل فاخر للمجموعات والألعاب',
     shortDescriptionEn: 'Heavyweight metal gold RPG polyhedral dice set',
@@ -509,11 +509,11 @@ export const INITIAL_REVIEWS: Review[] = [
     customerName: 'أحمد محمود',
     rating: 5,
     title: 'لعبة أسطورية وبديهة خطيرة!',
-    comment: 'اللعبة سريعة وممتعة جداً للسهرات مع العيلة والأصحاب. الجودة والكروت خامة فاخرة جداً تسلم إيديكم عالم زاجك!',
+    comment: 'اللعبة سريعة وممتعة جداً للسهرات مع العيلة والأصحاب. الجودة والكروت خامة فاخرة جداً تسلم إيديكم عالم على مزاجك!',
     date: '2026-09-02',
     isVerifiedPurchase: true,
     status: 'Approved',
-    adminReply: 'شكراً لك أستاذ أحمد! نتمنى لك دائماً أوقات مليئة بالحماس مع عالم زاجك 💛',
+    adminReply: 'شكراً لك أستاذ أحمد! نتمنى لك دائماً أوقات مليئة بالحماس مع عالم على مزاجك 💛',
   },
   {
     id: 'rev-2',
@@ -682,7 +682,7 @@ export const INITIAL_INVENTORY_LOGS: InventoryTransaction[] = [
 export const INITIAL_USERS: User[] = [
   {
     id: 'usr-admin',
-    name: 'مدير عالم زاجك',
+    name: 'مدير عالم على مزاجك',
     email: 'admin@3alamzagak.com',
     phone: '01000003Z3Z',
     role: 'Super Admin',
@@ -719,7 +719,7 @@ export const INITIAL_USERS: User[] = [
 export const INITIAL_BANNERS: HomepageBanner[] = [
   {
     id: 'ban-1',
-    titleAr: 'تحدى أصحابك في عالم زاجك!',
+    titleAr: 'تحدى أصحابك في عالم على مزاجك!',
     titleEn: 'Challenge Your Squad at 3alamzagak!',
     subtitleAr: 'أفخم ألعاب الكروت والطاولة بتصاميم ومشاعر لا تُنسى.',
     subtitleEn: 'The finest card & board games designed for unforgettable memories.',
@@ -734,7 +734,7 @@ export const INITIAL_BANNERS: HomepageBanner[] = [
 ];
 
 export const DEFAULT_SETTINGS: StoreSettings = {
-  storeNameAr: 'عالم زاجك - 3alamzagak',
+  storeNameAr: 'عالم على مزاجك - 3alamzagak',
   storeNameEn: '3alamzagak Board & Card Games',
   supportPhone: '+20 100 333 4488',
   supportEmail: 'support@3alamzagak.com',

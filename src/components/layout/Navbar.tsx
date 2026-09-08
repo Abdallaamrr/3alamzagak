@@ -68,9 +68,14 @@ export const Navbar: React.FC = () => {
       {/* Top Banner */}
       <div className="bg-gradient-to-r from-navy-900 via-gold-800/40 to-navy-900 text-gold-400 py-1.5 px-4 text-xs font-medium text-center border-b border-gold-500/10 flex items-center justify-between">
         <div className="container mx-auto flex items-center justify-between text-center">
-          <p className="w-full text-center sm:text-start">{t.freeShippingBanner}</p>
+          <p className="w-full text-center sm:text-start">
+            {t.freeShippingBanner}
+          </p>
           <div className="hidden sm:flex items-center gap-4 shrink-0 text-[11px] text-cream-200">
-            <Link href="/order-tracking" className="hover:text-gold-400 transition-colors">
+            <Link
+              href="/order-tracking"
+              className="hover:text-gold-400 transition-colors"
+            >
               {t.trackOrder}
             </Link>
             <span>•</span>
@@ -89,7 +94,11 @@ export const Navbar: React.FC = () => {
           className="lg:hidden text-gold-400 p-2 hover:bg-navy-850 rounded-lg transition-colors"
           aria-label="Toggle Menu"
         >
-          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isMobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </button>
 
         {/* Brand Logo */}
@@ -114,7 +123,9 @@ export const Navbar: React.FC = () => {
           {isSearchFocused && searchSuggestions.length > 0 && (
             <div className="absolute left-0 right-0 top-full mt-2 bg-navy-900 border border-gold-500/30 rounded-xl shadow-card-dark py-2 z-50 overflow-hidden">
               <div className="px-3 py-1.5 text-xs text-gold-400 font-semibold border-b border-gold-500/10">
-                {lang === 'ar' ? 'اقتراحات البحث السريع' : 'Quick Search Results'}
+                {lang === "ar"
+                  ? "اقتراحات البحث السريع"
+                  : "Quick Search Results"}
               </div>
               {searchSuggestions.map((prod) => (
                 <Link
@@ -129,7 +140,7 @@ export const Navbar: React.FC = () => {
                   />
                   <div className="flex-1 min-w-0">
                     <p className="text-sm text-cream-100 font-medium truncate">
-                      {lang === 'ar' ? prod.nameAr : prod.nameEn}
+                      {lang === "ar" ? prod.nameAr : prod.nameEn}
                     </p>
                     <p className="text-xs text-gold-400 font-semibold">
                       {prod.salePrice || prod.price} {t.egp}
@@ -145,7 +156,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-2 sm:gap-4">
           {/* Language Switcher */}
           <button
-            onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}
+            onClick={() => setLang(lang === "ar" ? "en" : "ar")}
             className="flex items-center gap-1.5 text-xs text-gold-400 font-bold px-2.5 py-1.5 rounded-lg border border-gold-500/30 hover:border-gold-500 hover:bg-gold-500/10 transition-all"
           >
             <Globe className="w-3.5 h-3.5 text-gold-400" />
@@ -205,8 +216,12 @@ export const Navbar: React.FC = () => {
                 {currentUser ? (
                   <>
                     <div className="px-4 py-2 border-b border-gold-500/10">
-                      <p className="font-bold text-cream-100">{currentUser.name}</p>
-                      <p className="text-[11px] text-gold-400/80 truncate">{currentUser.email}</p>
+                      <p className="font-bold text-cream-100">
+                        {currentUser.name}
+                      </p>
+                      <p className="text-[11px] text-gold-400/80 truncate">
+                        {currentUser.email}
+                      </p>
                       <span className="inline-block mt-1 px-2 py-0.5 rounded text-[10px] font-bold bg-gold-500/20 text-gold-400">
                         {currentUser.role}
                       </span>
@@ -228,7 +243,8 @@ export const Navbar: React.FC = () => {
                     </Link>
 
                     {/* Admin Link if Admin */}
-                    {(currentUser.role.includes('Admin') || currentUser.role.includes('Manager')) && (
+                    {(currentUser.role.includes("Admin") ||
+                      currentUser.role.includes("Manager")) && (
                       <Link
                         href="/admin"
                         onClick={() => setIsUserMenuOpen(false)}
@@ -260,7 +276,9 @@ export const Navbar: React.FC = () => {
                         }}
                         className="w-full text-center py-1.5 px-3 rounded-lg bg-gold-500 text-navy-950 font-bold hover:bg-gold-400 transition-colors"
                       >
-                        {lang === 'ar' ? 'دخول كعميل تجريبي' : 'Login Demo Customer'}
+                        {lang === "ar"
+                          ? "دخول كعميل تجريبي"
+                          : "Login Demo Customer"}
                       </button>
                       <button
                         onClick={() => {
@@ -269,7 +287,9 @@ export const Navbar: React.FC = () => {
                         }}
                         className="w-full text-center py-1.5 px-3 rounded-lg bg-navy-800 text-gold-400 font-bold border border-gold-500/30 hover:border-gold-500 transition-colors"
                       >
-                        {lang === 'ar' ? 'دخول لوحة التحكم (Admin)' : 'Login Admin Dashboard'}
+                        {lang === "ar"
+                          ? "دخول لوحة التحكم (Admin)"
+                          : "Login Admin Dashboard"}
                       </button>
                     </div>
                   </>
@@ -287,7 +307,9 @@ export const Navbar: React.FC = () => {
             <Link
               href="/"
               className={`hover:text-gold-400 transition-colors ${
-                pathname === '/' ? 'text-gold-400 font-bold border-b-2 border-gold-400 pb-1' : 'text-cream-200'
+                pathname === "/"
+                  ? "text-gold-400 font-bold border-b-2 border-gold-400 pb-1"
+                  : "text-cream-200"
               }`}
             >
               {t.home}
@@ -296,7 +318,9 @@ export const Navbar: React.FC = () => {
             <Link
               href="/shop"
               className={`hover:text-gold-400 transition-colors ${
-                pathname === '/shop' ? 'text-gold-400 font-bold border-b-2 border-gold-400 pb-1' : 'text-cream-200'
+                pathname === "/shop"
+                  ? "text-gold-400 font-bold border-b-2 border-gold-400 pb-1"
+                  : "text-cream-200"
               }`}
             >
               {t.shop}
@@ -315,7 +339,7 @@ export const Navbar: React.FC = () => {
                     href={`/shop?category=${cat.slug}`}
                     className="block px-3 py-2 rounded-lg hover:bg-navy-800 text-cream-100 hover:text-gold-400 transition-colors text-xs"
                   >
-                    {lang === 'ar' ? cat.nameAr : cat.nameEn}
+                    {lang === "ar" ? cat.nameAr : cat.nameEn}
                   </Link>
                 ))}
               </div>
@@ -329,25 +353,38 @@ export const Navbar: React.FC = () => {
               <span>{t.offers}</span>
             </Link>
 
-            <Link href="/shop?new=true" className="text-cream-200 hover:text-gold-400 transition-colors">
+            <Link
+              href="/shop?new=true"
+              className="text-cream-200 hover:text-gold-400 transition-colors"
+            >
               {t.newArrivals}
             </Link>
 
-            <Link href="/shop?bestseller=true" className="text-cream-200 hover:text-gold-400 transition-colors">
+            <Link
+              href="/shop?bestseller=true"
+              className="text-cream-200 hover:text-gold-400 transition-colors"
+            >
               {t.bestSellers}
             </Link>
 
-            <Link href="/about" className="text-cream-200 hover:text-gold-400 transition-colors">
+            <Link
+              href="/about"
+              className="text-cream-200 hover:text-gold-400 transition-colors"
+            >
               {t.about}
             </Link>
 
-            <Link href="/contact" className="text-cream-200 hover:text-gold-400 transition-colors">
+            <Link
+              href="/contact"
+              className="text-cream-200 hover:text-gold-400 transition-colors"
+            >
               {t.contact}
             </Link>
           </div>
 
           <div className="text-gold-400/70 text-[11px] font-sans">
-            ♠ ♥ ♣ ♦ {lang === 'ar' ? 'عالم زاجك - ممتع ولطيف' : 'Play & Compete'}
+            ♠ ♥ ♣ ♦{" "}
+            {lang === "ar" ? "عالم على مزاجك - ممتع ولطيف" : "Play & Compete"}
           </div>
         </div>
       </nav>

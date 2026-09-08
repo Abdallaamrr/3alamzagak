@@ -28,18 +28,22 @@ export default function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl space-y-8">
       <div className="text-center space-y-3">
-        <h1 className="text-3xl font-black font-heading text-cream-100">{t.contact}</h1>
+        <h1 className="text-3xl font-black font-heading text-cream-100">
+          {t.contact}
+        </h1>
         <p className="text-xs text-gray-400 max-w-md mx-auto">
-          {lang === 'ar'
-            ? 'فريق عالم زاجك جاهز دائماً للرد على استفساراتك واقتراحاتك.'
-            : 'The 3alamzagak team is always here to assist you.'}
+          {lang === "ar"
+            ? "فريق عالم على مزاجك جاهز دائماً للرد على استفساراتك واقتراحاتك."
+            : "The 3alamzagak team is always here to assist you."}
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="p-6 rounded-2xl bg-navy-900 border border-gold-500/20 text-center space-y-2">
           <Phone className="w-6 h-6 text-gold-400 mx-auto" />
-          <h3 className="text-sm font-bold text-cream-100">{lang === 'ar' ? 'الهاتف والواتساب' : 'Phone & WhatsApp'}</h3>
+          <h3 className="text-sm font-bold text-cream-100">
+            {lang === "ar" ? "الهاتف والواتساب" : "Phone & WhatsApp"}
+          </h3>
           <p className="text-xs font-mono text-gold-400" dir="ltr">
             {settings.supportPhone}
           </p>
@@ -47,26 +51,39 @@ export default function ContactPage() {
 
         <div className="p-6 rounded-2xl bg-navy-900 border border-gold-500/20 text-center space-y-2">
           <Mail className="w-6 h-6 text-gold-400 mx-auto" />
-          <h3 className="text-sm font-bold text-cream-100">{lang === 'ar' ? 'البريد الإلكتروني' : 'Support Email'}</h3>
+          <h3 className="text-sm font-bold text-cream-100">
+            {lang === "ar" ? "البريد الإلكتروني" : "Support Email"}
+          </h3>
           <p className="text-xs text-gold-400">{settings.supportEmail}</p>
         </div>
 
         <div className="p-6 rounded-2xl bg-navy-900 border border-gold-500/20 text-center space-y-2">
           <MapPin className="w-6 h-6 text-gold-400 mx-auto" />
-          <h3 className="text-sm font-bold text-cream-100">{lang === 'ar' ? 'المقر الرئيسي' : 'Headquarters'}</h3>
+          <h3 className="text-sm font-bold text-cream-100">
+            {lang === "ar" ? "المقر الرئيسي" : "Headquarters"}
+          </h3>
           <p className="text-xs text-gray-400">القاهرة، مصر (Cairo, Egypt)</p>
         </div>
       </div>
 
       {/* Form */}
-      <form onSubmit={handleSubmit} className="p-8 rounded-3xl bg-navy-900 border border-gold-500/30 space-y-4 max-w-2xl mx-auto text-xs">
+      <form
+        onSubmit={handleSubmit}
+        className="p-8 rounded-3xl bg-navy-900 border border-gold-500/30 space-y-4 max-w-2xl mx-auto text-xs"
+      >
         <h2 className="text-base font-bold text-cream-100 border-b border-gold-500/20 pb-3 flex items-center gap-2">
           <MessageSquare className="w-4 h-4 text-gold-400" />
-          <span>{lang === 'ar' ? 'أرسل لنا رسالة مباشرة' : 'Send Us a Direct Message'}</span>
+          <span>
+            {lang === "ar"
+              ? "أرسل لنا رسالة مباشرة"
+              : "Send Us a Direct Message"}
+          </span>
         </h2>
 
         <div>
-          <label className="block text-gray-300 font-bold mb-1">{t.fullName}</label>
+          <label className="block text-gray-300 font-bold mb-1">
+            {t.fullName}
+          </label>
           <input
             type="text"
             required
@@ -78,7 +95,9 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label className="block text-gray-300 font-bold mb-1">{t.email}</label>
+          <label className="block text-gray-300 font-bold mb-1">
+            {t.email}
+          </label>
           <input
             type="email"
             required
@@ -90,7 +109,9 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label className="block text-gray-300 font-bold mb-1">{lang === 'ar' ? 'الرسالة' : 'Message'}</label>
+          <label className="block text-gray-300 font-bold mb-1">
+            {lang === "ar" ? "الرسالة" : "Message"}
+          </label>
           <textarea
             rows={4}
             required
@@ -106,7 +127,7 @@ export default function ContactPage() {
           className="w-full py-3.5 rounded-xl bg-gold-500 text-navy-950 font-bold text-xs uppercase tracking-wider shadow-gold-glow hover:bg-gold-400 transition-colors flex items-center justify-center gap-2"
         >
           <Send className="w-4 h-4" />
-          <span>{lang === 'ar' ? 'إرسال الرسالة' : 'Send Message'}</span>
+          <span>{lang === "ar" ? "إرسال الرسالة" : "Send Message"}</span>
         </button>
       </form>
     </div>

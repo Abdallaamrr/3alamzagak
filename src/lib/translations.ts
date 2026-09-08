@@ -1,6 +1,6 @@
 const arDict = {
   // Header & Navigation
-  brandName: 'عالم زاجك',
+  brandName: 'عالم على مزاجك',
   brandTagline: 'ألعاب الورق والطاولة الفاخرة',
   home: 'الرئيسية',
   shop: 'المتجر',
@@ -8,7 +8,7 @@ const arDict = {
   offers: 'العروض والمفاجآت',
   newArrivals: 'وصل حديثاً',
   bestSellers: 'الأكثر مبيعاً',
-  about: 'عن عالم زاجك',
+  about: 'عن عالم على مزاجك',
   contact: 'تواصل معنا',
   faq: 'الأسئلة الشائعة',
   searchPlaceholder: 'ابحث عن لعبة، كروت، أو طاولة...',
@@ -27,7 +27,7 @@ const arDict = {
   heroSubtitle: 'وجهتك الأولى لأفخم ألعاب الكروت والترابيزة والألعاب الجماعية في مصر والوطن العربي.',
   shopNow: 'تسوق الآن',
   exploreGames: 'استكشف الألعاب',
-  whyUsTitle: 'لماذا عالم زاجك؟',
+  whyUsTitle: 'لماذا عالم على مزاجك؟',
   authenticProducts: 'منتجات أصلية 100%',
   authenticDesc: 'ألعاب جودة عالية مصممة لتدوم طويلاً مع أمتع الأوقات.',
   fastDelivery: 'توصيل سريع لكل مصر',
@@ -37,7 +37,7 @@ const arDict = {
   greatSupport: 'دعم فني متميز',
   greatSupportDesc: 'فريقنا معك دائماً للمساعدة وااختيار اللعبة المناسبة.',
   customerReviewsTitle: 'ماذا يقول عشاق الألعاب عنا؟',
-  newsletterTitle: 'انضم لعائلة زاجك واحصل على خصم 10%',
+  newsletterTitle: 'انضم لعائلة على مزاجك واحصل على خصم 10%',
   newsletterSubtitle: 'اشترك في النشرة البريدية ليصلك جديد الألعاب والخصومات الحصرية.',
   subscribe: 'اشترك الآن',
   enterEmail: 'أدخل بريدك الإلكتروني...',
@@ -130,7 +130,7 @@ const arDict = {
   welcomeBack: 'أهلاً بك مجدداً، {name}',
 
   // Admin Dashboard
-  adminTitle: 'لوحة إدارة عالم زاجك',
+  adminTitle: 'لوحة إدارة عالم على مزاجك',
   totalRevenue: 'إجمالي المبيعات',
   todayRevenue: 'مبيعات اليوم',
   totalOrders: 'إجمالي الطلبات',
@@ -157,9 +157,9 @@ const arDict = {
   confirm: 'تأكيد',
 
   // Footer & Meta
-  rightsReserved: 'جميع الحقوق محفوظة © {year} لعالم زاجك - 3alamzagak',
+  rightsReserved: 'جميع الحقوق محفوظة © {year} لعالم على مزاجك - 3alamzagak',
   customerCare: 'خدمة العملاء',
-  company: 'عالم زاجك',
+  company: 'عالم على مزاجك',
   terms: 'الشروط والأحكام',
   privacy: 'سياسة الخصوصية',
   shippingPolicy: 'سياسة الشحن والتوصيل',

@@ -26,12 +26,18 @@ export const Logo: React.FC<LogoProps> = ({
   const currentSize = sizeClasses[size];
 
   const logoContent = (
-    <div className={`inline-flex items-center gap-3 select-none group ${className}`}>
+    <div
+      className={`inline-flex items-center gap-3 select-none group ${className}`}
+    >
       {/* Emblem Frame */}
-      <div className={`relative flex items-center justify-center rounded-xl bg-gradient-to-br from-gold-400 via-gold-500 to-gold-700 p-[1.5px] shadow-gold-glow group-hover:shadow-gold-glow-lg transition-all duration-300`}>
+      <div
+        className={`relative flex items-center justify-center rounded-xl bg-gradient-to-br from-gold-400 via-gold-500 to-gold-700 p-[1.5px] shadow-gold-glow group-hover:shadow-gold-glow-lg transition-all duration-300`}
+      >
         <div className="bg-navy-900 rounded-[10.5px] p-2 flex items-center justify-center">
           {/* Custom Suits Emblem */}
-          <div className={`${currentSize.icon} flex flex-col items-center justify-center leading-none text-gold-400 font-bold`}>
+          <div
+            className={`${currentSize.icon} flex flex-col items-center justify-center leading-none text-gold-400 font-bold`}
+          >
             <div className="flex items-center gap-0.5 text-xs">
               <span className="text-suit-black dark:text-gold-400">♠</span>
               <span className="text-suit-red">♥</span>
@@ -47,8 +53,10 @@ export const Logo: React.FC<LogoProps> = ({
       {/* Brand Typography */}
       <div className="flex flex-col">
         <div className="flex items-center gap-2">
-          <span className={`font-heading font-black tracking-tight bg-gradient-to-r from-cream-100 via-gold-400 to-gold-600 bg-clip-text text-transparent ${currentSize.title}`}>
-            عالم زاجك
+          <span
+            className={`font-heading font-black tracking-tight bg-gradient-to-r from-cream-100 via-gold-400 to-gold-600 bg-clip-text text-transparent ${currentSize.title}`}
+          >
+            عالم على مزاجك
           </span>
           <span className="text-gold-500 font-serif font-bold text-xs tracking-widest uppercase opacity-80 border-l border-gold-500/30 pl-2 hidden sm:inline">
             3alamzagak

@@ -17,7 +17,8 @@ export default function TermsPage() {
 
       <div className="p-8 rounded-3xl bg-navy-900 border border-gold-500/20 space-y-4 text-xs text-cream-200 leading-relaxed">
         <p>
-          باستخدامك لموقع ومتجر عالم زاجك، فإنك توافق على الالتزام بالشروط والأحكام الخاصة بالمبيعات والأسعار بالجنيه المصري (EGP).
+          باستخدامك لموقع ومتجر عالم على مزاجك، فإنك توافق على الالتزام بالشروط
+          والأحكام الخاصة بالمبيعات والأسعار بالجنيه المصري (EGP).
         </p>
       </div>
     </div>

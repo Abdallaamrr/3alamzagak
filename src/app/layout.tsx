@@ -7,9 +7,9 @@ import { CartDrawer } from '@/components/cart/CartDrawer';
 import { ToastContainer } from '@/components/common/Toast';
 
 export const metadata: Metadata = {
-  title: 'عالم زاجك | 3alamzagak - Card & Board Games Store',
+  title: 'على مزاجك | 3alamzagak - Card & Board Games Store',
   description: 'المتجر الإلكتروني الأول لأفخم ألعاب الكروت والطاولة والتجمعات العائلية في مصر والوطن العربي.',
-  keywords: ['عالم زاجك', '3alamzagak', 'ألعاب كروت', 'ألعاب طاولة', 'شطرنج', 'سبيدي', 'Speeeeeedy', 'Board Games Egypt'],
+  keywords: ['على مزاجك', '3alamzagak', 'ألعاب كروت', 'ألعاب طاولة', 'شطرنج', 'سبيدي', 'Speeeeeedy', 'Board Games Egypt'],
   icons: {
     icon: '/favicon.ico',
   },
